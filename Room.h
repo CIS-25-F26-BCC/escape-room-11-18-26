@@ -48,7 +48,7 @@ class Room {
         Room(int x, int y, Player * player); // allocate the map
         ~Room(); // deallocate the map
         void draw();
-        // char tileAt(int x, int y); might consider this for later
+        char tileAt(int x, int y);
         bool canMove(int x, int y);
         void placeItem(Item * i, int x, int y);
         Item takeItem(int x, int y);
